@@ -36,7 +36,7 @@ public class CreateTextFile {
         System.out.printf("%s%n%s%n? ", "Enter account number, first name, last name and balance.",
                 "Enter end-of-file indicator to end input.");
 
-        while(input.hasNext()) { // faz um loopaté o  indicador de fim de arquivo
+        while(input.hasNext()) { // faz um loop até o  indicador de fim de arquivo
 
             try {
                 //gera saída do novo registro para o arquivo: supõe entrada válida
