@@ -43,7 +43,7 @@ public class CreateSequentialFile {
                 output.writeObject(record);
             } catch (NoSuchElementException elementException) {
                 System.err.println("Invalid inpu. Please try again.");
-                input.nextLine(); // descarta entrada para o usuário tentar de novo
+                input.next(); // descarta entrada para o usuário tentar de novo
             } catch (IOException e) {
                 System.err.println("Error writing to file. Terminating.");
                 break;
