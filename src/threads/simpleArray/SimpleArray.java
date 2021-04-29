@@ -15,7 +15,7 @@ public class SimpleArray {
         array = new int[size];
     }
 
-    public void add(int value) {
+    public synchronized void add(int value) {
         int position = writeIndex; // armazena o índice de gravação
 
         try {
