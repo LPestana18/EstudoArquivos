@@ -14,7 +14,7 @@ public class UnsynchronizedBuffer implements Buffer{
     // retorna valor do buffer
     @Override
     public int blockingGet() throws InterruptedException {
-        System.out.printf("Consumer reads\t%Zd",buffer);
+        System.out.printf("Consumer reads\t%2d", buffer);
         return buffer;
     }
 }//  fim da classe UnsynchronizedBuffer

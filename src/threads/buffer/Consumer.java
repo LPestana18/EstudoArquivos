@@ -23,7 +23,7 @@ public class Consumer implements Runnable{
             try {
                 Thread.sleep(generator.nextInt(3000));
                 sum += sharedLocation.blockingGet();
-                System.out.printf("\t\t\t%2d%n");
+                System.out.printf("\t\t\t%d%n");
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
